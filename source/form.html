@@ -33,43 +33,43 @@
     </header>
 
     <main class="form-container">
-      <h1 class="form__title">Подбор программы</h1>
+      <h1 class="form-title">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <label class="form__name" for="name">Имя:*</label>
-        <input class="form__nickname-field" type="text" id="name" name="name" placeholder="барсик" required>
-        <label class="form__weight" for="weight">Вес (кг):*</label>
-        <input class="form__weight-field" type="number" id="weight" name="weight" placeholder="7" required>
-        <label class="form__age" for="age">Возраст (лет):</label>
-        <input class="form__age-field" type="number" id="age" name="age" placeholder="7">
+        <label class="form__label" for="name">Имя:*</label>
+        <input class="form__input" type="text" id="name" name="name" placeholder="барсик" required>
+        <label class="form__label" for="weight">Вес (кг):*</label>
+        <input class="form__input" type="number" id="weight" name="weight" placeholder="7" required>
+        <label class="form__label" for="age">Возраст (лет):</label>
+        <input class="form__input" type="number" id="age" name="age" placeholder="7">
 
         <fieldset class="program-selection">
           <legend class="visually-hidden">Выбор программы.</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <label class="program-selection__slim" for="slim"></label>
-              <input class="program-selection__slim-field" type="radio" id="slim" name="slim" value="slim" checked>
+              <label class="program-selection__label" for="slim"></label>
+              <input class="program-selection__input" type="radio" id="slim" name="slim" value="slim" checked>
               <span class="program-selection__text">Похудение</span>
             </li>
             <li class="program-selection__item">
-              <label class="program-selection__weight-gain" for="weight-gain"></label>
-              <input class="program-selection__weight-gain-field" type="radio" id="weight-gain" name="weight-gain" value="weight-gain">
+              <label class="program-selection__label" for="weight-gain"></label>
+              <input class="program-selection__input" type="radio" id="weight-gain" name="weight-gain" value="weight-gain">
               <span class="program-selection__text">Набор массы</span>
             </li>
             <li class="program-selection__item">
-              <label class="program-selection__advice" for="advice"></label>
-              <input class="program-selection__advice-field" type="radio" id="advice" name="advice" value="advice">
+              <label class="program-selection__label" for="advice"></label>
+              <input class="program-selection__input" type="radio" id="advice" name="advice" value="advice">
               <span class="program-selection__text">Не знаю (нужен ваш совет)</span>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="user-contact">
-          <legend class="user-contact__title">Контактные данные (владельца кота)</legend>
-          <label class="user-contact__e-mail" for="e-mail">E-mail:*</label>
-          <input class="user-contact__e-mail-field" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
-          <label class="user-contact__mobile" for="mobile">Телефон:*</label>
-          <input class="user-contact__mobile-field" type="tel" id="mobile" name="mobile" placeholder="8 (960) 900-60-90" required>
+        <fieldset class="form__contact">
+          <legend class="form__title">Контактные данные (владельца кота)</legend>
+          <label class="form__label" for="e-mail">E-mail:*</label>
+          <input class="form__input" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
+          <label class="form__label" for="mobile">Телефон:*</label>
+          <input class="form__input" type="tel" id="mobile" name="mobile" placeholder="8 (960) 900-60-90" required>
         </fieldset>
 
         <fieldset class="сomment">
@@ -82,33 +82,33 @@
           <legend class="supplement__title">Дополнительно</legend>
           <ul class="supplement__list">
             <li class="supplement__item">
-              <label class="supplement__sweetener">
-                <input class="supplement__sweetener-field" type="checkbox" name="sweetener" checked>
+              <label class="supplement__label">
+                <input class="supplement__input" type="checkbox" name="sweetener" checked>
                 <span class="supplement__text">Сахарозаменитель</span>
               </label>
             </li>
             <li class="supplement__item">
-              <label class="supplement__water">
-                <input class="supplement__water-field" type="checkbox" name="water">
+              <label class="supplement__label">
+                <input class="supplement__input" type="checkbox" name="water">
                 <span class="supplement__text">Питьевая вода</span>
               </label>
             </li>
             <li class="supplement__item">
-              <label class="supplement__milk">
-                <input class="supplement__milk-field" type="checkbox" name="milk">
+              <label class="supplement__label">
+                <input class="supplement__input" type="checkbox" name="milk">
                 <span class="control-label">Молоко</span>
               </label>
             </li>
             <li class="supplement__item">
-              <label class="supplement__vitamins">
-                <input class="supplement__vitamin-field" type="checkbox" name="vitamin">
+              <label class="supplement__label">
+                <input class="supplement__input" type="checkbox" name="vitamin">
                 <span class="supplement__text">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="request" type="submit">Отправить заявку</button>
-        <p class="mandatory-field">* — Обязательные поля</p>
+        <button class="form__request" type="submit">Отправить заявку</button>
+        <p class="form__mandatory-field">* — Обязательные поля</p>
       </form>
     </main>
 
