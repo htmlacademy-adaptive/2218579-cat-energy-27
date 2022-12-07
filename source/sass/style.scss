@@ -1,2 +1,8 @@
-// Начните писать стили здесь
+//Шрифт
+@import "./blocks/fonts.scss";
+//Общие шрифты
 @import "./blocks/main-body.scss";
+//Хедер
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/site-list.scss";
