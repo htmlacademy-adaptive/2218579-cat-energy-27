@@ -7,7 +7,5 @@
 }
 
 .site-list__name-link {
-  text-decoration: none;
-  color: #000000;
-
+  @include link;
 }
