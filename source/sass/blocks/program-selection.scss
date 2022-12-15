@@ -1,0 +1,36 @@
+.program-selection {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-bottom: 45px;
+}
+
+.program-selection__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.program-selection__item {
+  padding-bottom: 13px;
+}
+
+.program-selection__label {
+
+}
+
+.program-selection__input {
+  margin: 0;
+}
+
+.program-selection__text {
+  font-family: "Owsald regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
