@@ -68,3 +68,24 @@
   padding: 0;
   padding-bottom: 35px;
 }
+
+.form__request {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 20px;
+  width: 280px;
+  border: none;
+  color: $white;
+  background-color: #68b738;
+  cursor: pointer;
+  padding: 7px 44px;
+}
+
+.form__mandatory-field {
+  font-family: "Lato regular", sans-serif;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 21px 0 32px;
+}
