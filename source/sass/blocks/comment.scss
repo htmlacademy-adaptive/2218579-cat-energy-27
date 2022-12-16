@@ -5,19 +5,20 @@
   padding-bottom: 23px;
 }
 
-.сomment__title {
+.comment__title {
   font-family: "Owsald regular", sans-serif;
   font-size: 24px;
   line-height: 26px;
   padding: 0 0 38px;
 }
 
-.сomment__user {
+.comment__user {
 
 }
 
-.сomment__user-field {
-  width: 245px;
+.comment__user-field {
+  width: 280px;
   height: 151px;
-  padding: 0;
+  padding: 10px 15px;
+  box-sizing: border-box;
 }
