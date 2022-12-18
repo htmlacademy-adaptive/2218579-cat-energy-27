@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 500;
   src: url("/source/css/style.css") format("woff2"),
-        url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+        url("/source/css/style.css") format("woff");
   font-display: swap;
 }
 
