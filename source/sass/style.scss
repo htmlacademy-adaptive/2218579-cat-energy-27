@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+//Переменные
+@import "./variables.scss";
+//Миксин
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/link.scss";
+//Шрифт
+@import "./blocks/fonts.scss";
+//Общие шрифты
+@import "./blocks/main-body.scss";
+//index
+//Хедер
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/site-list.scss";
+//Мейн
+@import "./blocks/functional-food.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+//Футер
+@import "./blocks/page-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/footer-logo-cat-energy.scss";
+@import "./blocks/social-list.scss";
+//catalog
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-product-title.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/characteristic.scss";
+@import "./blocks/all-product.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/promo-present.scss";
+//Форм
+@import "./blocks/form-container.scss";
+@import "./blocks/form-title.scss";
+@import "./blocks/form-description.scss";
+@import "./blocks/form.scss";
+@import "./blocks/wrapper-data.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/supplement.scss";

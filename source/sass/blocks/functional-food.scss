@@ -1,0 +1,29 @@
+.functional-food {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.functional-food__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 27px 35px 25px;
+  color: $white;
+}
+
+.functional-food__slogan {
+  line-height: 14px;
+  margin: 0;
+  padding: 0 62px 0;
+  color: $white;
+}
+
+.functional-food__program-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 7px 44px;
+  background-color: rgba(104, 183, 56, 0.85);
+}

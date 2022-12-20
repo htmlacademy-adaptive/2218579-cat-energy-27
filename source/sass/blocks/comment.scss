@@ -1,0 +1,19 @@
+.comment {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-bottom: 23px;
+}
+
+.comment__title {
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0 0 38px;
+}
+
+.comment__user-field {
+  width: 280px;
+  height: 151px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
