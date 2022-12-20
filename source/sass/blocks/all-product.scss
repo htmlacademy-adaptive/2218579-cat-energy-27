@@ -19,7 +19,9 @@
 .all-product__button-order {
   font-size: 16px;
   line-height: 20px;
+
   @include link;
+
   background-color: #f2f2f2;
   text-transform: uppercase;
   padding: 10px 94px;
