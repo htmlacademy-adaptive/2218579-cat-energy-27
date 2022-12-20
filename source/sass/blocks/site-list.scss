@@ -4,8 +4,18 @@
 
 .site-list__item {
   padding: 22px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+    padding-right: 34px;
+    }
+  }
 }
 
 .site-list__name-link {
   @include link;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0 24px;
+    }
 }

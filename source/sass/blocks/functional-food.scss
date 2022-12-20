@@ -1,5 +1,16 @@
 .functional-food {
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.functional-food__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 68px 0 0 89px;
+    position: relative;
+  }
 }
 
 .functional-food__title {
@@ -9,6 +20,13 @@
   margin: 0;
   padding: 27px 35px 25px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    padding: 0 0 41px;
+  }
 }
 
 .functional-food__slogan {
@@ -16,6 +34,13 @@
   margin: 0;
   padding: 0 62px 0;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    padding: 0 0 21px;
+  }
 }
 
 .functional-food__program-button {
@@ -26,4 +51,14 @@
   width: 280px;
   padding: 7px 44px;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 14px 26px;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    left: 87px;
+  }
 }
