@@ -1,5 +1,9 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .example__wrapper {
@@ -12,12 +16,60 @@
   line-height: 40px;
   margin: 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 63px;
+  }
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
   font-family: "Lato Regular", "Arial", sans-serif;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+}
+
+.example__wrapper-result {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 366px auto;
+    padding-bottom: 91px;
+  }
+}
+
+.example__result-list {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.example__number-description {
+  font-family: "Lato Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost {
@@ -25,4 +77,9 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 0;
+  }
 }
