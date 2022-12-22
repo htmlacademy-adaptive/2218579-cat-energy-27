@@ -5,11 +5,22 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 720px;
+  }
 }
 
 .main-navigation__toggle {
   @media (min-width: $tablet-width) {
     @include visually-hidden;
+  }
+}
+
+.main-navigation__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 69px 110px 0 0;
+    background-color: rgba(104, 183, 56, 0.85);
   }
 }
 
@@ -20,4 +31,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
+

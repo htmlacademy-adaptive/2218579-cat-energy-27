@@ -10,12 +10,22 @@
     padding-right: 34px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .site-list__name-link {
   @include link;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 24px;
+      padding: 22px 0 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
     }
 }
