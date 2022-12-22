@@ -16,6 +16,10 @@
     margin: 0;
     padding: 0 30px 107px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 90px;
+  }
 }
 
 .advantages__title {
@@ -42,6 +46,11 @@
     display: grid;
     grid-template-columns: 236px 245px;
     gap: 88px 148px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 70px;
   }
 }
 

@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 71px;
+  }
 }
 
 .programs__list {
@@ -14,6 +18,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -27,6 +36,11 @@
     padding: 81px 0 53px 52px;
     display: grid;
     grid-template-columns: 330px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 41px 65px 61px 52px;
   }
 }
 
@@ -42,6 +56,10 @@
     line-height: 36px;
     padding: 0 0 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 73px 162px;
+  }
 }
 
 .programs__description {
@@ -51,6 +69,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
   }
 }
 
