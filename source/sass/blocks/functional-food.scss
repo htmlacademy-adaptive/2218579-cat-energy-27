@@ -11,6 +11,10 @@
     padding: 68px 0 0 89px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 82px 190px;
+  }
 }
 
 .functional-food__title {
@@ -27,6 +31,10 @@
     color: $black;
     padding: 0 0 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .functional-food__slogan {
@@ -41,6 +49,10 @@
     color: $black;
     padding: 0 0 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 52px;
+  }
 }
 
 .functional-food__program-button {
@@ -54,11 +66,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    box-sizing: border-box;
     padding: 14px 26px;
     width: 244px;
     font-size: 20px;
     line-height: 20px;
     left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 189px;
   }
 }
