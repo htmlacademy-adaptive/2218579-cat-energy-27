@@ -4,4 +4,10 @@
   line-height: 36px;
   margin: 0;
   padding: 27px 0 49px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 163px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

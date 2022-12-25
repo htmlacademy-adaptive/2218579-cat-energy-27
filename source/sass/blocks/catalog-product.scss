@@ -4,12 +4,26 @@
   margin: 0;
   display: grid;
   row-gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 163px 0 68px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 141px 60px;
+  }
 }
 
 .catalog-product__item {
   display: grid;
   grid-template-columns: 140px 140px;
   row-gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 39px 37px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog-product__link {
@@ -25,6 +39,12 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog-product__button-order {
