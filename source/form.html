@@ -38,12 +38,20 @@
       <p class="form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="wrapper-data">
-          <label class="form__label" for="name">Имя:*</label>
-          <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="барсик" required>
-          <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-          <input class="form__input form__input--weight" type="number" id="weight" name="weight" placeholder="7" required>
-          <label class="form__label form__label--age" for="age">Возраст (лет):</label>
-          <input class="form__input form__input--age" type="number" id="age" name="age" placeholder="7">
+          <div class="form__wrapper-cat-information">
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="барсик" required>
+          </div>
+
+          <div class="form__wrapper-cat-information">
+            <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+            <input class="form__input form__input--weight" type="number" id="weight" name="weight" placeholder="7" required>
+          </div>
+
+          <div class="form__wrapper-cat-information">
+            <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+            <input class="form__input form__input--age" type="number" id="age" name="age" placeholder="7">
+          </div>
         </div>
 
         <fieldset class="program-selection">
