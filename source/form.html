@@ -37,50 +37,56 @@
       <h1 class="form-title">Подбор программы</h1>
       <p class="form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="wrapper-data">
-          <div class="form__wrapper-cat-information">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="барсик" required>
+        <div class="form__wrapper">
+          <div class="wrapper-data">
+            <div class="form__wrapper-cat-information">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="барсик" required>
+            </div>
+
+            <div class="form__wrapper-cat-information">
+              <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+              <input class="form__input form__input--weight" type="number" id="weight" name="weight" placeholder="7" required>
+            </div>
+
+            <div class="form__wrapper-cat-information">
+              <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+              <input class="form__input form__input--age" type="number" id="age" name="age" placeholder="7">
+            </div>
           </div>
 
-          <div class="form__wrapper-cat-information">
-            <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-            <input class="form__input form__input--weight" type="number" id="weight" name="weight" placeholder="7" required>
-          </div>
-
-          <div class="form__wrapper-cat-information">
-            <label class="form__label form__label--age" for="age">Возраст (лет):</label>
-            <input class="form__input form__input--age" type="number" id="age" name="age" placeholder="7">
-          </div>
+          <fieldset class="program-selection">
+            <legend class="visually-hidden">Выбор программы.</legend>
+            <ul class="program-selection__list">
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="slim"></label>
+                <input class="program-selection__input" type="radio" id="slim" name="slim" value="slim" checked>
+                <span class="program-selection__text">Похудение</span>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="weight-gain"></label>
+                <input class="program-selection__input" type="radio" id="weight-gain" name="weight-gain" value="weight-gain">
+                <span class="program-selection__text">Набор массы</span>
+              </li>
+              <li class="program-selection__item">
+                <label class="program-selection__label" for="advice"></label>
+                <input class="program-selection__input" type="radio" id="advice" name="advice" value="advice">
+                <span class="program-selection__text">Не знаю (нужен ваш совет)</span>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-
-        <fieldset class="program-selection">
-          <legend class="visually-hidden">Выбор программы.</legend>
-          <ul class="program-selection__list">
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="slim"></label>
-              <input class="program-selection__input" type="radio" id="slim" name="slim" value="slim" checked>
-              <span class="program-selection__text">Похудение</span>
-            </li>
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="weight-gain"></label>
-              <input class="program-selection__input" type="radio" id="weight-gain" name="weight-gain" value="weight-gain">
-              <span class="program-selection__text">Набор массы</span>
-            </li>
-            <li class="program-selection__item">
-              <label class="program-selection__label" for="advice"></label>
-              <input class="program-selection__input" type="radio" id="advice" name="advice" value="advice">
-              <span class="program-selection__text">Не знаю (нужен ваш совет)</span>
-            </li>
-          </ul>
-        </fieldset>
 
         <fieldset class="form__contact">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <label class="form__label form__label--email" for="e-mail">E-mail:*</label>
-          <input class="form__input form__input--email" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
-          <label class="form__label form__label--mobile" for="mobile">Телефон:*</label>
-          <input class="form__input form__input--mobile" type="tel" id="mobile" name="mobile" placeholder="8 (960) 900-60-90" required>
+          <div class="form__wrapper-host">
+            <label class="form__label form__label--email" for="e-mail">E-mail:*</label>
+            <input class="form__input form__input--email" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form__wrapper-host">
+            <label class="form__label form__label--mobile" for="mobile">Телефон:*</label>
+            <input class="form__input form__input--mobile" type="tel" id="mobile" name="mobile" placeholder="8 (960) 900-60-90" required>
+          </div>
         </fieldset>
 
         <fieldset class="comment">
@@ -119,7 +125,7 @@
           </ul>
         </fieldset>
         <button class="form__request" type="submit">Отправить заявку</button>
-        <p class="form__mandatory-field">* — Обязательные поля</p>
+        <span class="form__mandatory-field">* — Обязательные поля</span>
       </form>
     </main>
 
