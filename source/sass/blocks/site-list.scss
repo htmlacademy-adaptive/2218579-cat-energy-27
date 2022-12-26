@@ -21,11 +21,17 @@
 
   @media (min-width: $tablet-width) {
       padding: 22px 0 24px;
+      &--user {
+        color: #111111;
+      }
     }
 
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 30px;
       color: $white;
+      &--user {
+        color: #111111;
+      }
     }
-}
+  }

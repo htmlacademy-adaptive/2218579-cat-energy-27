@@ -28,6 +28,16 @@
       z-index: -1;
       top: 1%;
     }
+    &--user::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      left: 50%;
+      height: 694px;
+      background-color: $white;
+      z-index: -1;
+      top: 1%;
+    }
   }
 }
 
