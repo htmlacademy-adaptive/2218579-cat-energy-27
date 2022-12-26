@@ -5,6 +5,10 @@
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
