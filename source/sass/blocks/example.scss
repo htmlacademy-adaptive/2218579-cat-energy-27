@@ -6,7 +6,7 @@
     position: absolute;
     content: "";
     top: 0;
-    height: 659px;
+    height: 580px;
     width: 100%;
     background-color: #eaeaea;
     z-index: -1
@@ -14,27 +14,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      position: absolute;
-      content: "";
-      top: 0;
       height: 462px;
-      width: 100%;
-      background-color: #eaeaea;
-      z-index: -1;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      height: 462px;
-      width: 100%;
-      background-color: #eaeaea;
-      z-index: -1;
     }
   }
 }
@@ -48,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
+    position: relative;
   }
 }
 
