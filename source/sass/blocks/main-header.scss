@@ -5,6 +5,7 @@
   line-height: 20px;
   position: relative;
   z-index: 1;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -21,7 +22,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 50%;
       left: 50%;
       height: 694px;
       background-color: #68b738;
@@ -31,7 +32,7 @@
     &--user::before {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 50%;
       left: 50%;
       height: 694px;
       background-color: $white;
