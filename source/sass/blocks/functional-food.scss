@@ -7,9 +7,14 @@
 }
 
 .functional-food__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     padding: 68px 0 0 89px;
     position: relative;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,12 +29,14 @@
   margin: 0;
   padding: 27px 35px 25px;
   color: $white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $black;
     padding: 0 0 41px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +49,7 @@
   margin: 0;
   padding: 0 62px 0;
   color: $white;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -63,6 +71,7 @@
   width: 280px;
   padding: 7px 44px;
   background-color: rgba(104, 183, 56, 0.85);
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     position: absolute;
