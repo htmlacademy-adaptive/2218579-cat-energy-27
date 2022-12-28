@@ -44,12 +44,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 236px 245px;
+    grid-template-columns: 1fr 1fr;
     gap: 88px 148px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 70px;
   }
 }
