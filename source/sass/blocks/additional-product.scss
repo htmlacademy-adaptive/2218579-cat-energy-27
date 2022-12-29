@@ -48,7 +48,7 @@
 
 .additional-product__item {
   display: grid;
-  grid-template-columns: 149px 131px;
+  grid-template-columns: 1fr 1fr;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
