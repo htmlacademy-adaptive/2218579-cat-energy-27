@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   background-color: #ffffff;
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
@@ -30,4 +31,14 @@
   font-family: "Lato Regular", "Arial", sans-serif;
   font-style: normal;
   line-height: 20px;
+}
+
+.address__location {
+  width: 100%;
+  margin: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
