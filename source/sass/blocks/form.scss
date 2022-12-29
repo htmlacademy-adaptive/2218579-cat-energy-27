@@ -58,49 +58,15 @@
   text-transform: uppercase;
   padding: 14px 20px;
   box-sizing: border-box;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
 
-
-  &--name {
-    width: 95%;
-
-    @media (min-width: $desktop-width) {
-      width: 96%;
-      z-index: 1;
-    }
-  }
-
-  &--weight {
-    width: 91%;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-  }
-
-    @media (min-width: $desktop-width) {
-      width: 82%;
-      z-index: 1;
-    }
-  }
-
-  &--age {
-    @media (min-width: $desktop-width) {
-      width: 78%;
-      z-index: 1;
-    }
-  }
-
-  &--email {
-    width: 91%;
-  }
-
-  &--mobile {
-    width: 89%;
+  @media (min-width: $desktop-width) {
+  z-index: 1;
   }
 }
 
