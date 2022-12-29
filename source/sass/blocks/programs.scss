@@ -68,6 +68,7 @@
   padding: 0 0 42px 0;
 
   @media (min-width: $tablet-width) {
+    grid-row-start: 2;
     padding: 0 0 48px;
   }
 
@@ -92,5 +93,6 @@
     padding: 4px 57px 4px 0;
     width: 165px;
     box-sizing: border-box;
+    grid-row-start: 3;
   }
 }
