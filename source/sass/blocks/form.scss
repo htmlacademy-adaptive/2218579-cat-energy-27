@@ -9,7 +9,6 @@
 }
 
 .form__wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -37,6 +36,7 @@
 
   &--weight {
     padding-right: 21px;
+
     @media (min-width: $desktop-width) {
       padding-right: 30px;
     }
@@ -44,6 +44,7 @@
 
   &--age {
     padding-right: 18px;
+
     @media (min-width: $desktop-width) {
       padding-right: 20px;
     }
@@ -66,7 +67,7 @@
   }
 
   @media (min-width: $desktop-width) {
-  z-index: 1;
+    z-index: 1;
   }
 }
 

@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 110px 29px;
+
     &::before {
       position: absolute;
       content: "";
@@ -29,6 +30,7 @@
       z-index: -1;
       top: 1%;
     }
+
     &--user::before {
       position: absolute;
       content: "";
