@@ -87,6 +87,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-bottom: 67px;
+    gap: 78px
   }
 }
 
@@ -105,6 +106,7 @@
 
 .form__wrapper-host {
   display: flex;
+  flex-grow: 1;
 }
 
 .form__request {
