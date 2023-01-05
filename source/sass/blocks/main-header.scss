@@ -19,28 +19,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 110px 29px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 50%;
-      left: 50%;
-      height: 694px;
-      background-color: #68b738;
-      z-index: -1;
-      top: 1%;
-    }
-
-    &--user::before {
-      position: absolute;
-      content: "";
-      width: 50%;
-      left: 50%;
-      height: 694px;
-      background-color: $white;
-      z-index: -1;
-      top: 1%;
-    }
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
