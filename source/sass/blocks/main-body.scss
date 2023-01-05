@@ -5,10 +5,22 @@
   line-height: 18px;
   min-width: 320px;
   margin: 0 auto;
-  max-width: 2100px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      left: 50%;
+      height: 694px;
+      background-color: #68b738;
+      z-index: 1;
+      top: 0;
+    }
   }
 }
