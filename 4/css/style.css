@@ -45,12 +45,23 @@
   line-height: 18px;
   min-width: 320px;
   margin: 0 auto;
-  max-width: 2100px;
 }
 @media (min-width: 768px) {
   .main-body {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-body::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    left: 50%;
+    height: 694px;
+    background-color: #68b738;
+    z-index: 1;
+    top: 0;
   }
 }
 
@@ -77,26 +88,8 @@
 @media (min-width: 1440px) {
   .main-header {
     padding: 53px 110px 29px;
-  }
-  .main-header::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    left: 50%;
-    height: 694px;
-    background-color: #68b738;
-    z-index: -1;
-    top: 1%;
-  }
-  .main-header--user::before {
-    position: absolute;
-    content: "";
-    width: 50%;
-    left: 50%;
-    height: 694px;
-    background-color: #ffffff;
-    z-index: -1;
-    top: 1%;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -205,6 +198,11 @@
   .site-list__name-link--user {
     color: #111111;
   }
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 2500px;
 }
 
 .functional-food {
@@ -514,6 +512,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .example::before {
+    display: none;
+  }
 }
 
 .example__wrapper {
@@ -634,11 +635,25 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .page-footer::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 462px;
+    background-color: #f2f2f2;
+    bottom: 772px;
+  }
+}
+
+.page-footer__container {
+  background-color: #f2f2f2;
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -650,6 +665,8 @@
 @media (min-width: 1440px) {
   .page-footer__wrapper {
     padding: 57px 110px 58px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -984,12 +1001,6 @@
   grid-template-columns: 1fr 1fr;
   list-style-type: none;
 }
-@media (min-width: 768px) {
-  .additional-product__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 .additional-product__name {
   font-weight: 400;
@@ -1203,6 +1214,7 @@
   .form__contact {
     flex-direction: row;
     padding-bottom: 67px;
+    gap: 78px;
   }
 }
 
@@ -1222,6 +1234,7 @@
 
 .form__wrapper-host {
   display: flex;
+  flex-grow: 1;
 }
 
 .form__request {
