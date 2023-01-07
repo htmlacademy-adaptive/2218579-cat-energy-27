@@ -13,17 +13,19 @@
 @import "./blocks/main-navigation.scss";
 @import "./blocks/site-list.scss";
 //Мейн
+@import "./blocks/main-container.scss";
 @import "./blocks/functional-food.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
+@import "./blocks/slider-cat.scss";
 //Футер
 @import "./blocks/page-footer.scss";
 @import "./blocks/address.scss";
 @import "./blocks/footer-logo-cat-energy.scss";
 @import "./blocks/social-list.scss";
 //catalog
-@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-page.scss";
 @import "./blocks/catalog-product-title.scss";
 @import "./blocks/catalog-product.scss";
 @import "./blocks/characteristic.scss";

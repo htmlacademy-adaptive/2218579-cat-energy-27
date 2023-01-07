@@ -1,9 +1,31 @@
 .main-navigation {
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 720px;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }

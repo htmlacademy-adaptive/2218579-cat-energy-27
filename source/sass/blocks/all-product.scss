@@ -1,6 +1,15 @@
 .all-product {
   text-align: center;
   padding: 78px 0 25px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 39px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .all-product__title {
@@ -9,16 +18,30 @@
   line-height: 20px;
   margin: 0;
   padding-bottom: 8px;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 23px;
+  }
 }
 
 .all-product__description {
+  font-family: "Lato Regular", "Arial", sans-serif;
   margin: 0;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 18px;
+    padding-bottom: 87px;
+  }
 }
 
 .all-product__button-order {
   font-size: 16px;
   line-height: 20px;
+  color: #444444;
 
   @include link;
 

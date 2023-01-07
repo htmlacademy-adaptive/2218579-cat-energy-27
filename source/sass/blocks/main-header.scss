@@ -3,7 +3,27 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 30px 0;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 29px;
+    margin: 0 auto;
+    max-width: 2500px;
+  }
 }
+
 
 .main-header__logo-image {
   padding-right: 57px;
@@ -14,6 +34,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
   }
 }
 
@@ -26,5 +50,9 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

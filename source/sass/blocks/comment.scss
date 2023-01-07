@@ -3,17 +3,31 @@
   padding: 0;
   border: none;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
 }
 
 .comment__title {
   font-size: 24px;
   line-height: 26px;
   padding: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 76px;
+  }
 }
 
 .comment__user-field {
-  width: 280px;
-  height: 151px;
+  width: 100%;
+  min-height: 151px;
   padding: 10px 15px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+  }
 }

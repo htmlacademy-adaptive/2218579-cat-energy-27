@@ -2,4 +2,14 @@
   margin: 0;
   padding-bottom: 39px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 54px 39px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 66px 0;
+  }
 }

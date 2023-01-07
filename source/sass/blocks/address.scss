@@ -1,9 +1,18 @@
 .address__wrapper {
   display: grid;
   padding: 26px 20px;
-  grid-template-columns: 139px 139px;
+  grid-template-columns: 1fr 1fr;
   gap: 2px;
   background-color: #ffffff;
+  justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .address__title {
@@ -11,10 +20,25 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
   font-family: "Lato Regular", "Arial", sans-serif;
   font-style: normal;
   line-height: 20px;
+}
+
+.address__location {
+  width: 100%;
+  margin: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
