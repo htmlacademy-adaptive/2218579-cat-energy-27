@@ -1,17 +1,3 @@
-.page-footer {
-  @media (min-width: $desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 462px;
-      background-color: #f2f2f2;
-      // bottom: -373px;
-      bottom: 772px;
-    }
-  }
-}
-
 .page-footer__container {
   background-color: #f2f2f2;
 }
