@@ -4,8 +4,11 @@
 
 .site-list__item {
   padding: 22px 0 24px;
+  border-top: 1px solid #e6e6e6;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    border: none;
     &:not(:last-child) {
       padding-right: 34px;
     }
@@ -21,6 +24,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 22px 0 24px;
+    &--current::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 34px);
+      z-index: 1;
+      bottom: 12px;
+    }
 
     &--user {
       color: #111111;
@@ -31,6 +43,10 @@
     line-height: 30px;
     font-size: 20px;
     color: $white;
+    &--current::before {
+      background-color: #ffffff;
+      bottom: -12px;
+    }
 
     &--user {
       color: #111111;
