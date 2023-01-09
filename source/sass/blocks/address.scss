@@ -12,14 +12,22 @@
   background-color: #ffffff;
   justify-items: center;
 
-  @media (min-width: $tablet-width) {
+  &--background {
     background-color: #f2f2f2;
   }
+
+  // @media (min-width: $tablet-width) {
+  //   background-color: #f2f2f2;
+  // }
 
   @media (min-width: $desktop-width) {
     background-color: $white;
     position: absolute;
     top: 95px;
+
+    &--background {
+      background-color: $white;
+    }
   }
 }
 

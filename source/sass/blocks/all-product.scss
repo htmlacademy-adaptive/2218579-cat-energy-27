@@ -1,7 +1,19 @@
 .all-product {
   text-align: center;
-  padding: 78px 0 25px;
+  padding: 78px 20px 25px;
   color: #444444;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  &::before {
+    background-image: url("../img/mobile-images/plus.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    content: "";
+    top: 25px;
+    left: 46%;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 39px 37px;
@@ -19,6 +31,7 @@
   margin: 0;
   padding-bottom: 8px;
   color: #111111;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -42,6 +55,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  display: block;
 
   @include link;
 

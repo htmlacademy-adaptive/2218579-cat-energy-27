@@ -34,9 +34,9 @@
       bottom: 12px;
     }
 
-    &--user {
-      color: #111111;
-    }
+    // &--user {
+    //   color: #111111;
+    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,16 @@
 
     &--user {
       color: #111111;
+    }
+
+    &--current-user::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 34px);
+      z-index: 1;
+      bottom: -10px;
     }
   }
 }
