@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="main-body">
+  <body class="main-body main-body--background">
     <header class="main-header main-header--user">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo/logo-cat-energy.svg" width="33" height="38" alt="Логотип кэт энерджи">
-        <img class="main-header__logo-title" src="img/logo/title-logo-cat-energy.svg" width="101" height="18" alt="Название логотипа кэт энерджи">
-      </a>
+      <div class="main-header__wrapper-logo">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logo/logo-cat-energy.svg" width="33" height="38" alt="Логотип кэт энерджи">
+          <img class="main-header__logo-title" src="img/logo/title-logo-cat-energy.svg" width="101" height="18" alt="Название логотипа кэт энерджи">
+        </a>
+      </div>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
-            <li class="site-list__item ">
+            <li class="site-list__item site-list__item--current">
               <a class="site-list__name-link site-list__name-link--user" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__name-link site-list__name-link--user" href="#">Каталог продукции</a>
+              <a class="site-list__name-link site-list__name-link--user site-list__name-link--current-user" href="#">Каталог продукции</a>
             </li>
             <li class="site-list__item ">
               <a class="site-list__name-link site-list__name-link--user" href="form.html">Подбор программы</a>
@@ -46,7 +48,7 @@
                 <img class="catalog-product__image" src="img/products/cat-energy-pro-500-chicken.png" width="68" height="86" alt="Сухой корм">
               </a>
               <a class="catalog-product__link" href="#">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 500 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy PRO 500 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -60,10 +62,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-1000-chicken.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-pro-1000-chicken.png" width="84" height="100" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 1000 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy PRO 1000 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -77,10 +79,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-500-fish.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-pro-500-fish.png" width="68" height="78" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 500 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy PRO 500 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -94,10 +96,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-1000-fish.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-pro-1000-fish.png" width="84" height="100" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 1000 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy PRO 1000 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -111,10 +113,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-500-buckwheat.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-slim-500-buckwheat.png" width="68" height="78" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 500 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy slim 500 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -128,10 +130,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-1000-buckwheat.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-slim-1000-buckwheat.png" width="84" height="100" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 1000 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy slim 1000 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -145,10 +147,10 @@
             </li>
             <li class="catalog-product__item">
               <a class="catalog-product__link-image" href="#">
-                <img class="catalog-product__image" src="img/products/cat-energy-pro-500-rice.png" width="68" height="86" alt="Сухой корм">
+                <img class="catalog-product__image" src="img/products/cat-energy-slim-500-rice.png" width="72" height="84" alt="Сухой корм">
               </a>
               <a class="catalog-product__link">
-                <h3 class="catalog-product__title-cat-energy-pro">Cat Energy PRO 500 г</h3>
+                <h3 class="catalog-product__title-cat-energy">Cat Energy slim 500 г</h3>
               </a>
               <dl class="characteristic">
                 <dt class="characteristic__title">Масса</dt>
@@ -208,7 +210,8 @@
           </ul>
 
           <div class="promo-present">
-            <p class="promo-present__description">Закажите все и получите чехол для кота в подарок!</p>
+            <svg class="promo-present__icon-gift" width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M64.016 34.713H14.03c-1.754 0-3.182-1.418-3.182-3.16v-9.469c0-1.742 1.428-3.16 3.182-3.16h49.984c1.754 0 3.18 1.418 3.18 3.16v9.469c0 1.742-1.426 3.16-3.18 3.16ZM14.03 21.346a.751.751 0 0 0-.744.738v9.469c0 .407.334.738.744.738h49.984c.41 0 .743-.331.743-.738v-9.469a.75.75 0 0 0-.743-.738H14.03Z" fill="#fff"/><path d="M57.045 67.149H20.999c-3.377 0-6.125-2.73-6.125-6.086V33.502c0-.669.546-1.212 1.219-1.212s1.219.543 1.219 1.212v27.56c0 2.021 1.654 3.665 3.687 3.665h36.046c2.032 0 3.686-1.644 3.686-3.664V33.502c0-.669.546-1.212 1.219-1.212.672 0 1.218.543 1.218 1.212v27.56c0 3.357-2.747 6.087-6.123 6.087Z" fill="#fff"/><path d="M39.023 67.149a1.215 1.215 0 0 1-1.22-1.211V33.502c0-.669.547-1.212 1.22-1.212.672 0 1.218.543 1.218 1.212v32.435c0 .67-.545 1.212-1.218 1.212ZM23.811 21.341c-3.814-2.054-5.238-6.808-3.173-10.6 2.064-3.789 6.848-5.204 10.665-3.154 5.814 3.13 8.954 11.86 9.084 12.23l-2.3.804c-.029-.083-2.961-8.222-7.944-10.904-2.635-1.415-5.937-.438-7.36 2.177-1.426 2.618-.444 5.9 2.19 7.318l-1.162 2.13Z" fill="#fff"/><path d="m54.231 21.341-1.16-2.13a5.376 5.376 0 0 0 2.622-3.207 5.327 5.327 0 0 0-.431-4.109 5.382 5.382 0 0 0-3.226-2.604 5.426 5.426 0 0 0-4.134.426c-4.982 2.682-7.915 10.82-7.944 10.903l-2.3-.803c.131-.37 3.27-9.101 9.084-12.23a7.859 7.859 0 0 1 5.99-.617 7.8 7.8 0 0 1 4.674 3.771 7.72 7.72 0 0 1 .623 5.953 7.788 7.788 0 0 1-3.798 4.647ZM61.95 50.931H16.093a1.215 1.215 0 0 1-1.219-1.21c0-.67.546-1.212 1.219-1.212H61.95c.672 0 1.218.543 1.218 1.211 0 .669-.545 1.211-1.218 1.211Z" fill="#fff"/></svg>
+            <p class="promo-present__description">Закажите все <br class="promo-present__line-folding">и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -216,7 +219,7 @@
 
     <footer class="page-footer">
       <section class="address">
-        <div class="address__wrapper">
+        <div class="address__wrapper address__wrapper--background">
           <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="address__description">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
@@ -246,5 +249,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
