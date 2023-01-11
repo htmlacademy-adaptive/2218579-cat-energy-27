@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 141px 60px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,11 +28,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 39px 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border: none;
+    gap: 0;
+    justify-content: end;
 
     &::before {
       content: "";
@@ -83,6 +86,17 @@
     text-align: center;
     padding: 34px 73px 21px 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    padding: 46px 45px 22px 55px;
+  }
+}
+
+.catalog-product__background {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .catalog-product__button-order {
@@ -92,7 +106,7 @@
 
   @include link;
 
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 20px;
   color: $white;
   background-color: #68b738;
@@ -101,6 +115,11 @@
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 33px 37px 39px;
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 53px;
   }
 }

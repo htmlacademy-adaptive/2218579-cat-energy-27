@@ -16,8 +16,30 @@
   }
 }
 
+.characteristic__title {
+  @media (min-width: $tablet-width) {
+    margin-left: 38px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 41px;
+  }
+}
+
 .characteristic__description {
-  margin: 0;
+  padding: 0;
+  margin: 0 20px 0 0;
+  width: 100%;
   justify-self: end;
-  padding-right: 20px;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 37px 0 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px 0 0;
+  }
 }

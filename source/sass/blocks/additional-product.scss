@@ -26,13 +26,40 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 37px 106px;
+    padding: 0 0 80px 37px;
     font-size: 36px;
     line-height: 36px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      right: calc(100% - 2px);
+      top: 19%;
+    }
+
+    &::after {
+      top: 19%;
+      left: calc(100% - 300px);
+      width: 329px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 81px 0;
+    padding: 0 110px 81px;
+    max-width: 2500px;
+    margin: 0 auto;
+
+    &::before {
+      width: 100%;
+      right: calc(100% - 66px);
+    }
+
+    &::after {
+      left: calc(100% - 957px);
+      width: 957px
+    }
   }
 }
 
@@ -40,6 +67,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr auto;
+    padding: 0 110px 86px;
   }
 }
 
@@ -50,7 +78,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 0 0 97px;
+    // padding: 0 0 97px;
+    padding: 0;
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +100,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    border: none;
+    // border: none;
+    padding: 26px 38px 28px;
+    // border-bottom: 1px solid;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 15px 0 17px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -87,6 +126,7 @@
     grid-row-start: 2;
     line-height: 20px;
     font-size: 20px;
+    padding: 0;
   }
 }
 
@@ -105,6 +145,17 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     line-height: 20px;
+    padding: 0;
+  }
+}
+
+.additional-product__form {
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -125,4 +176,13 @@
   background-color: #68b738;
   padding: 10px 109px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 13px 92px;
+  }
 }
