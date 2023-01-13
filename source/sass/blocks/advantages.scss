@@ -59,6 +59,7 @@
 .advantages__item {
   padding-left: 80px;
   position: relative;
+
   &--leaf {
     background-image: url("../img/mobile-images/advantages/leaf.svg");
     background-repeat: no-repeat;
@@ -81,6 +82,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
     &::before {
       position: absolute;
       right: 37px;

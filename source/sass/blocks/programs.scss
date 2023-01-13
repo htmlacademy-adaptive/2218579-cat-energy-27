@@ -51,10 +51,10 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    right: 0;
     bottom: 25%;
     right: 7%;
   }
+
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 106px;
@@ -124,6 +124,7 @@
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
+
   &:hover {
     transform: scaleX(1.4);
   }

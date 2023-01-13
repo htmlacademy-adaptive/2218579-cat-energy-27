@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0 20px 36px;
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -29,6 +30,7 @@
     padding: 0 0 80px 37px;
     font-size: 36px;
     line-height: 36px;
+
     &::before {
       content: "";
       position: absolute;
@@ -58,7 +60,7 @@
 
     &::after {
       left: calc(100% - 957px);
-      width: 957px
+      width: 957px;
     }
   }
 }
@@ -94,15 +96,13 @@
   list-style-type: none;
   border-top: 1px solid #cdcdcd;
   padding-bottom: 19px;
+
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    // border: none;
     padding: 26px 38px 28px;
-    // border-bottom: 1px solid;
   }
 
   @media (min-width: $desktop-width) {

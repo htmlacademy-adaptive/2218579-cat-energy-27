@@ -56,12 +56,10 @@
 
   &::before {
     transform: rotate(45deg);
-
   }
 
   &::after {
     transform: rotate(-45deg);
-
   }
 }
 
@@ -73,7 +71,6 @@
 //   display: none;
 // }
 
-
 .main-navigation__toggle {
   position: absolute;
   top: -38px;
@@ -84,6 +81,7 @@
   cursor: pointer;
   right: 10px;
   padding: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

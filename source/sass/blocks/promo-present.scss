@@ -1,7 +1,7 @@
 .promo-present {
   text-align: center;
   margin: 35px 20px 0;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/mobile-images/carrying-case.png);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/carrying-case.png");
   background-repeat: no-repeat;
   height: 290px;
   object-fit: cover;
@@ -13,7 +13,6 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     margin: 0;
     flex-direction: row;
     margin-top: 69px;

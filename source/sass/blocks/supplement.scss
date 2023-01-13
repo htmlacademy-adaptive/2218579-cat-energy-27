@@ -1,6 +1,5 @@
 .supplement {
   margin: 0;
-  padding: 0;
   border: none;
   position: relative;
   padding: 0 20px 34px;
@@ -25,7 +24,6 @@
       left: -22%;
       bottom: 146%;
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +49,6 @@
     // padding-bottom: 57px;
     padding: 0 40px 57px;
     background-color: #ffffff;
-
   }
 }
 
@@ -86,6 +83,7 @@
 
 .supplement__input {
   margin: 0;
+
   @include visually-hidden;
 }
 
@@ -95,7 +93,7 @@
   height: 30px;
   content: "";
   border: 1px solid #cdcdcd;
-  left: 0px;
+  left: 0;
   top: -5px;
 
   @media (min-width: $tablet-width) {
@@ -104,13 +102,12 @@
   }
 }
 
-.supplement__input[type="checkbox"]:checked + .supplement__control-mark::before{
+.supplement__input[type="checkbox"]:checked + .supplement__control-mark::before {
   background-image: url("../img/mobile-images/tick.svg");
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 18px;
   height: 16px;
   content: "";
