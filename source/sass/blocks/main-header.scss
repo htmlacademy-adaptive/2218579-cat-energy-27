@@ -9,11 +9,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 26px 30px 0;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,4 +56,10 @@
 
 .main-header__wrapper-logo {
   padding: 12px 65px 17px 20px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
