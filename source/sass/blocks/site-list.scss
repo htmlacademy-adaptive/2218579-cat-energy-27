@@ -3,16 +3,13 @@
 }
 
 .site-list__item {
-  padding: 22px 0 24px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  padding: 17px 0 11px 33px;
 
   @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      padding-right: 34px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
+    border: none;
+    padding: 17px 0 11px 33px;
   }
 }
 
@@ -20,10 +17,16 @@
   @include link;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 24px;
+    padding: 0;
 
-    &--user {
-      color: #111111;
+    &--current::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 34px);
+      z-index: 1;
+      bottom: 12px;
     }
   }
 
@@ -32,8 +35,23 @@
     font-size: 20px;
     color: $white;
 
+    &--current::before {
+      background-color: #ffffff;
+      bottom: -12px;
+    }
+
     &--user {
       color: #111111;
+    }
+
+    &--current-user::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 34px);
+      z-index: 1;
+      bottom: -10px;
     }
   }
 }

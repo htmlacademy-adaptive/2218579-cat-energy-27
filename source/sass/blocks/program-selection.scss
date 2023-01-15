@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -13,15 +12,17 @@
 
 .program-selection__list {
   margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 22px 20px 19px;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 75px;
+    padding: 25px 29px;
     row-gap: 13px;
+    border: 1px solid #e7e7e7;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,15 +31,59 @@
 }
 
 .program-selection__item {
-  padding-bottom: 13px;
+  padding-bottom: 20px;
+}
+
+.program-selection__label {
+  position: relative;
 }
 
 .program-selection__input {
   margin: 0;
+
+  @include visually-hidden;
+}
+
+.program-selection__input[type="radio"]:checked + .program-selection__control-mark::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__input[type="radio"]:checked + .program-selection__control-mark::before {
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.program-selection__control-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border: 1px solid;
+  border-radius: 50%;
+  left: 0;
+  top: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .program-selection__text {
   font-size: 16px;
   text-transform: uppercase;
-  padding-left: 15px;
+  padding-left: 45px;
 }

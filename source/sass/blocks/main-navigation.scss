@@ -1,6 +1,7 @@
 .main-navigation {
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -11,7 +12,76 @@
   }
 }
 
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  right: 0;
+  top: 0;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+}
+
+@media (max-width: $mobile-width) {
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+  }
+
+  .main-navigation--closed .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__wrapper {
+    position: static;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle:active::before,
+.main-navigation--closed .main-navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  right: 13px;
+  top: -38px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background-color: $black;
+    left: 1px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-navigation__toggle {
+  position: absolute;
+  top: -38px;
+  width: 26px;
+  height: 16px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  right: 10px;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

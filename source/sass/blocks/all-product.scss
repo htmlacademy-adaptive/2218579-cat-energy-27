@@ -1,10 +1,24 @@
 .all-product {
   text-align: center;
-  padding: 78px 0 25px;
+  padding: 78px 20px 25px;
   color: #444444;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+
+  &::before {
+    background-image: url("../img/mobile-images/plus.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    content: "";
+    top: 25px;
+    left: 46%;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 39px 37px;
+    border: 1px solid #ebebeb;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,11 +33,16 @@
   margin: 0;
   padding-bottom: 8px;
   color: #111111;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    padding-bottom: 23px;
+    padding: 122px 57px 23px 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 160px 55px 23px 56px;
   }
 }
 
@@ -34,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
-    padding-bottom: 87px;
+    padding: 0 42px 87px;
   }
 }
 
@@ -42,10 +61,20 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  display: block;
 
   @include link;
 
   background-color: #f2f2f2;
   text-transform: uppercase;
   padding: 10px 94px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 79px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 30px;
+    margin: 38px 41px;
+  }
 }

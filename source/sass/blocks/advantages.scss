@@ -19,6 +19,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 90px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -41,11 +43,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 88px 148px;
+    counter-reset: index;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,12 +60,47 @@
 
 .advantages__item {
   padding-left: 80px;
+  position: relative;
+  background-repeat: no-repeat;
+
+  &--leaf {
+    background-image: url("../img/mobile-images/advantages/leaf.svg");
+  }
+
+  &--powder {
+    background-image: url("../img/mobile-images/advantages/powder.svg");
+  }
+
+  &--food {
+    background-image: url("../img/mobile-images/advantages/kitchen-appliances.svg");
+  }
+
+  &--time {
+    background-image: url("../img/mobile-images/advantages/alarm-clock.svg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    &::before {
+      position: absolute;
+      right: 37px;
+      font-size: 280px;
+      line-height: 280px;
+      top: -56px;
+      counter-increment: index;
+      content: counters(index, ".", decimal) " ";
+      color: #f2f2f2;
+      z-index: -1;
+    }
   }
 }
 
 .advantages__description {
   margin: 0;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 117px 0 57px;
+  }
 }

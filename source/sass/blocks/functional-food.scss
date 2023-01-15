@@ -1,8 +1,22 @@
 .functional-food {
-  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+
+  &::before {
+    width: 100%;
+    content: "";
+    height: 302px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/cat.png"), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    &::before {
+      background-color: $white;
+      background-image: none;
+    }
   }
 }
 
@@ -19,6 +33,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 82px 190px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -60,6 +76,14 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 52px;
+  }
+}
+
+.functional-food__image {
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 

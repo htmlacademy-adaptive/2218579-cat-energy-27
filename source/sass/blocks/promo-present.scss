@@ -1,9 +1,51 @@
 .promo-present {
   text-align: center;
+  margin: 35px 20px 0;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/carrying-case.png");
+  background-repeat: no-repeat;
+  height: 290px;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex-direction: row;
+    margin-top: 69px;
+    justify-content: space-between;
+    padding: 65px 123px 68px 88px;
+    gap: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 0 0 79px;
+    padding: 0;
+    gap: 0;
+  }
 }
 
 .promo-present__description {
   font-family: "Lato Regular", "Arial", sans-serif;
   line-height: 20px;
   margin: 0;
+  padding: 48px 61px 43px 58px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 30%;
+    text-align: start;
+  }
+}
+
+.promo-present__line-folding {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
