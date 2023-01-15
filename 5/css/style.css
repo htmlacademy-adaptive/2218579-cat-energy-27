@@ -173,7 +173,13 @@
     background-color: #ffffff;
     width: 100%;
   }
-  .main-navigation--closed .site-list {
+  .main-navigation--closed .main-navigation__list {
+    display: none;
+  }
+  .main-navigation--nojs .main-navigation__wrapper {
+    position: static;
+  }
+  .main-navigation--nojs .main-navigation__toggle {
     display: none;
   }
 }
@@ -291,11 +297,6 @@
   }
 }
 
-.main-container {
-  margin: 0 auto;
-  max-width: 2500px;
-}
-
 .functional-food {
   position: relative;
 }
@@ -303,7 +304,7 @@
   width: 100%;
   content: "";
   height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/cat.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/cat.png"), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
   position: absolute;
   background-repeat: no-repeat;
   background-position: center top;
@@ -331,6 +332,8 @@
 @media (min-width: 1440px) {
   .functional-food__wrapper {
     padding: 0 0 82px 190px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -425,6 +428,13 @@
 @media (min-width: 1440px) {
   .programs {
     padding: 0 110px 71px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .programs__container {
+    max-width: 2500px;
+    margin: 0 auto;
   }
 }
 
@@ -588,6 +598,8 @@
 @media (min-width: 1440px) {
   .advantages__wrapper {
     padding: 0 110px 90px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -631,22 +643,19 @@
 .advantages__item {
   padding-left: 80px;
   position: relative;
+  background-repeat: no-repeat;
 }
 .advantages__item--leaf {
   background-image: url("../img/mobile-images/advantages/leaf.svg");
-  background-repeat: no-repeat;
 }
 .advantages__item--powder {
   background-image: url("../img/mobile-images/advantages/powder.svg");
-  background-repeat: no-repeat;
 }
 .advantages__item--food {
   background-image: url("../img/mobile-images/advantages/kitchen-appliances.svg");
-  background-repeat: no-repeat;
 }
 .advantages__item--time {
   background-image: url("../img/mobile-images/advantages/alarm-clock.svg");
-  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .advantages__item {
@@ -694,8 +703,11 @@
     height: 462px;
   }
 }
+
 @media (min-width: 1440px) {
-  .example {
+  .example__container {
+    margin: 0 auto;
+    max-width: 2500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -1325,11 +1337,31 @@
 .additional-product {
   padding: 25px 0 35px;
   border-top: 1px solid #ebebeb;
+  position: relative;
+}
+.additional-product::after {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  width: 100%;
+  height: 2px;
+  top: 4%;
+  z-index: -1;
 }
 @media (min-width: 768px) {
   .additional-product {
     padding: 0;
     border: none;
+  }
+  .additional-product::after {
+    top: 2%;
+    left: 4%;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-product::after {
+    left: 0;
+    top: 4%;
   }
 }
 
@@ -1340,19 +1372,12 @@
   margin: 0;
   padding: 0 20px 36px;
   position: relative;
-}
-.additional-product__title::after {
-  content: "";
-  position: absolute;
-  background-color: #68b738;
-  width: 48px;
-  height: 2px;
-  left: calc(100% - 48px);
-  top: 26%;
+  display: inline-block;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .additional-product__title {
-    padding: 0 0 80px 37px;
+    padding: 0 37px 80px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -1365,11 +1390,6 @@
     right: calc(100% - 2px);
     top: 19%;
   }
-  .additional-product__title::after {
-    top: 19%;
-    left: calc(100% - 300px);
-    width: 329px;
-  }
 }
 @media (min-width: 1440px) {
   .additional-product__title {
@@ -1380,10 +1400,6 @@
   .additional-product__title::before {
     width: 100%;
     right: calc(100% - 66px);
-  }
-  .additional-product__title::after {
-    left: calc(100% - 957px);
-    width: 957px;
   }
 }
 
@@ -1734,13 +1750,12 @@
 }
 .form__contact::before {
   content: "";
-  width: 27%;
   height: 2px;
   position: absolute;
   background-color: #68b738;
-  left: 73%;
   bottom: 150%;
   z-index: -1;
+  width: 96%;
 }
 @media (min-width: 768px) {
   .form__contact {
@@ -1769,14 +1784,15 @@
 .form__title {
   font-size: 24px;
   line-height: 26px;
-  padding: 0 0 35px;
+  background-color: #ffffff;
+  margin-left: -20px;
+  padding: 0 20px 35px;
 }
 @media (min-width: 768px) {
   .form__title {
     font-size: 36px;
     line-height: 36px;
     padding: 0 0 71px;
-    background-color: #ffffff;
     padding-left: 39px;
     padding-right: 39px;
     margin-left: -41px;
@@ -1959,13 +1975,12 @@
 }
 .comment::before {
   content: "";
-  width: 49%;
   height: 2px;
   position: absolute;
   background-color: #68b738;
-  left: 51%;
   bottom: 125%;
   z-index: -1;
+  width: 96%;
 }
 @media (min-width: 768px) {
   .comment {
@@ -1988,14 +2003,15 @@
 .comment__title {
   font-size: 24px;
   line-height: 26px;
-  padding: 0 0 38px;
+  padding: 0 20px 38px;
+  margin-left: -20px;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .comment__title {
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px 76px;
-    background-color: #ffffff;
     margin-left: -40px;
   }
 }
@@ -2027,13 +2043,12 @@
 }
 .supplement::before {
   content: "";
-  width: 44%;
   height: 2px;
   position: absolute;
   background-color: #68b738;
-  left: 56%;
-  bottom: 128%;
+  bottom: 123%;
   z-index: -1;
+  width: 96%;
 }
 @media (min-width: 768px) {
   .supplement {
@@ -2061,14 +2076,15 @@
 .supplement__title {
   font-size: 24px;
   line-height: 26px;
-  padding-bottom: 34px;
+  padding: 0 20px 34px;
+  background-color: #ffffff;
+  margin-left: -20px;
 }
 @media (min-width: 768px) {
   .supplement__title {
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px 57px;
-    background-color: #ffffff;
   }
 }
 
