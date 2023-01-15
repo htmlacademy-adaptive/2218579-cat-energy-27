@@ -30,7 +30,15 @@
     width: 100%;
   }
 
-  .main-navigation--closed .site-list {
+  .main-navigation--closed .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__wrapper {
+    position: static;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
     display: none;
   }
 }
@@ -62,14 +70,6 @@
     transform: rotate(-45deg);
   }
 }
-
-// .main-navigation--nojs .main-navigation__wrapper {
-//   position: static;
-// }
-
-// .main-navigation--nojs .main-navigation__toggle {
-//   display: none;
-// }
 
 .main-navigation__toggle {
   position: absolute;

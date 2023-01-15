@@ -18,14 +18,14 @@
       height: 462px;
     }
   }
+}
 
+.example__container {
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 2500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    // &::before {
-    //   display: none;
-    // }
   }
 }
 

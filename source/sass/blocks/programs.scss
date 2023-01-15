@@ -10,6 +10,13 @@
   }
 }
 
+.programs__container {
+  @media (min-width: $desktop-width) {
+    max-width: 2500px;
+    margin: 0 auto;
+  }
+}
+
 .programs__list {
   list-style-type: none;
   margin: 0;

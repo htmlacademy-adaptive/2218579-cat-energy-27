@@ -6,13 +6,12 @@
 
   &::before {
     content: "";
-    width: 44%;
     height: 2px;
     position: absolute;
     background-color: #68b738;
-    left: 56%;
-    bottom: 128%;
+    bottom: 123%;
     z-index: -1;
+    width: 96%;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,14 +40,14 @@
 .supplement__title {
   font-size: 24px;
   line-height: 26px;
-  padding-bottom: 34px;
+  padding: 0 20px 34px;
+  background-color: $white;
+  margin-left: -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    // padding-bottom: 57px;
     padding: 0 40px 57px;
-    background-color: #ffffff;
   }
 }
 

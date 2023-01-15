@@ -19,6 +19,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 90px;
+    margin: 0 auto;
+    max-width: 2500px;
   }
 }
 
@@ -59,25 +61,22 @@
 .advantages__item {
   padding-left: 80px;
   position: relative;
+  background-repeat: no-repeat;
 
   &--leaf {
     background-image: url("../img/mobile-images/advantages/leaf.svg");
-    background-repeat: no-repeat;
   }
 
   &--powder {
     background-image: url("../img/mobile-images/advantages/powder.svg");
-    background-repeat: no-repeat;
   }
 
   &--food {
     background-image: url("../img/mobile-images/advantages/kitchen-appliances.svg");
-    background-repeat: no-repeat;
   }
 
   &--time {
     background-image: url("../img/mobile-images/advantages/alarm-clock.svg");
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
