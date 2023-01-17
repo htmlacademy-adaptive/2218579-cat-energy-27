@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+
     &::before {
       background-image: none;
     }

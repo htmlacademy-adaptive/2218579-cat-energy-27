@@ -17,11 +17,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 290px;
-
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     flex-direction: row;
     margin: 69px 0 76px;
     justify-content: space-between;
