@@ -73,8 +73,11 @@
 .additional-product__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr auto;
+    column-gap: 79px;
+    grid-template-columns: 1fr 245px;
     padding: 0 110px 86px;
+    max-width: 2500px;
+    margin: 0 auto;
   }
 }
 
@@ -85,12 +88,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    // padding: 0 0 97px;
-    padding: 0;
-    border: 1px solid #cdcdcd;
-  }
-
-  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
