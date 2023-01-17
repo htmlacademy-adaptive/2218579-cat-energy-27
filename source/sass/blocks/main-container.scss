@@ -14,14 +14,12 @@
       background-position: 50%;
       background-size: cover;
     }
-  }
 
-  @media (min-resolution: 2dppx) {
-    &::before {
-      background-size: 720px auto;
-      background-repeat: no-repeat;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/desktop-images/cat@2x.png");
-      background-position: 50%;
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/desktop-images/cat@2x.png");
+        background-size: cover;
+      }
     }
   }
 }

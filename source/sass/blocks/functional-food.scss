@@ -10,16 +10,11 @@
     background-repeat: no-repeat;
     background-position: center top;
     z-index: -1;
-  }
 
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile-images/cat@2x.png");
-    background-size: 320px auto;
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: -1;
-    background-color: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
+    @media (min-resolution: 2dppx) {
+      background-size: 320px auto;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/mobile-images/cat@2x.png"), linear-gradient(rgba(14, 20, 10, 0.85), rgba(38, 70, 20, 0.85), rgba(14, 20, 10, 0.85));
+    }
   }
 
   @media (min-width: $tablet-width) {
