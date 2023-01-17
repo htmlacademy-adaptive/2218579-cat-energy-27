@@ -74,6 +74,63 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: 163px;
+    height: 174px;
+
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 168px;
+      height: 206px;
+    }
+
+    &--fish-1000 {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--buckwheat-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--buckwheat-1000 {
+      width: 168px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    height: 174px;
+
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--fish-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--buckwheat-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--buckwheat-1000 {
+      width: 172px;
+      height: 196px;
+    }
   }
 }
 

@@ -7,3 +7,27 @@
     top: 0;
   }
 }
+
+.slider-cat__weight-image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider-cat__slim-image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
