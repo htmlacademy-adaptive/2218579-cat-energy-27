@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="main-body main-body--background">
     <header class="main-header main-header--user">
       <div class="main-header__wrapper-logo">
-        <a class="main-header__logo" href="#">
-          <img class="main-header__logo-image" src="img/logo/logo-cat-energy.svg" width="33" height="38" alt="Логотип кэт энерджи">
-          <img class="main-header__logo-title" src="img/logo/title-logo-cat-energy.svg" width="101" height="18" alt="Название логотипа кэт энерджи">
-        </a>
+        <picture>
+          <source media="(min-width: 1440px)" width="202" height="59" srcset="img/desktop-images/logo/logo-cat-energy.svg">
+          <source media="(min-width: 768px)" width="174" height="52" srcset="img/tablet-images/logo/logo-cat-energy.svg">
+          <img class="main-header__logo-image" src="img/mobile-images/logo/logo-cat-energy.svg" width="33" height="38" alt="Логотип кэт энерджи">
+          <img class="main-header__logo-title" src="img/mobile-images/logo/title-logo-cat-energy.svg" width="101" height="18" alt="Название логотипа кэт энерджи">
+        </picture>
       </div>
 
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -159,7 +165,11 @@
       </section>
       <div class="page-footer__wrapper">
         <a class="footer-logo-cat-energy" href="https://vk.com/htmlacademy">
-          <img class="footer-logo-cat-energy__title" src="img/logo/title-logo-cat-energy.svg" width="128" height="24" alt="Название логотипа кэт энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" width="143" height="26" srcset="img/desktop-images/logo/title-logo-cat-energy.svg">
+            <source media="(min-width: 768px)" width="143" height="26" srcset="img/tablet-images/logo/title-logo-cat-energy.svg">
+            <img class="footer-logo-cat-energy__title" src="img/mobile-images/logo/title-logo-cat-energy.svg" width="128" height="24" alt="Название логотипа кэт энерджи">
+          </picture>
         </a>
 
         <ul class="social-list">

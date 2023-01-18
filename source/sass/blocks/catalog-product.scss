@@ -34,14 +34,14 @@
     flex-wrap: wrap;
     border: none;
     gap: 0;
-    justify-content: end;
+    // justify-content: end;
 
     &::before {
       content: "";
       width: 100%;
       height: 430px;
       background-color: #f2f2f2;
-      top: 0;
+      top: 31px;
       position: absolute;
       z-index: -1;
     }
@@ -59,16 +59,26 @@
 
 .catalog-product__link-image {
   grid-row: 1 / 3;
-  position: relative;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 206px;
+  }
 }
 
 .catalog-product__image {
-  position: absolute;
-  left: 39px;
-  top: 31px;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: 168px;
+    height: 200px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
   }
 }
 
