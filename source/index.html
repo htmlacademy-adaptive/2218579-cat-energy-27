@@ -128,21 +128,27 @@
               </dl>
               <p class="example__cost">Затраты на питание:<br class="example__line-folding"><span class="example__current-cost">15 000 РУБ.</span></p>
             </div>
-
-            <div class="slider-cat">
-              <picture>
-                <source media="(min-width: 1440px)" width="560" height="512" srcset="img/desktop-images/images-slider/cat-weight.png 1x, img/desktop-images/images-slider/cat-weight@2x.png 2x">
-                <source media="(min-width: 768px)" width="560" height="512" srcset="img/tablet-images/images-slider/cat-slim.png 1x, img/tablet-images/images-slider/cat-slim@2x.png 2x">
-                <img class="slider-cat__weight-image" src="img/mobile-images/images-slider/cat-weight.png" width="280" height="256" srcset="img/mobile-images/images-slider/cat-weight@2x.png 2x" alt="Толстый кот">
-              </picture>
-              <picture>
-                <source media="(min-width: 1440px)" width="560" height="512" srcset="img/desktop-images/images-slider/cat-slim.png 1x, img/desktop-images/images-slider/cat-slim@2x.png 2x">
-                <source media="(min-width: 768px)" width="560" height="512" srcset="img/tablet-images/images-slider/cat-weight.png 1x, img/tablet-images/images-slider/cat-weight@2x.png 2x">
-                <img class="slider-cat__slim-image" src="img/mobile-images/images-slider/cat-slim.png" width="280" height="256" srcset="img/mobile-images/images-slider/cat-slim@2x.png 2x" alt="Худой кот">
-              </picture>
-              <button class="slider-cat__button-before-after" type="button">
-                <span class="visually-hidden">Кот до и после использования корма.</span>
-              </button>
+            <div class="compare slider-cat">
+              <div class="slider-cat__before">
+                <picture>
+                  <source media="(min-width: 1440px)" width="560" height="512" srcset="img/desktop-images/images-slider/cat-weight.png 1x, img/desktop-images/images-slider/cat-weight@2x.png 2x">
+                  <source media="(min-width: 768px)" width="560" height="512" srcset="img/tablet-images/images-slider/cat-weight.png 1x, img/tablet-images/images-slider/cat-slim@2x.png 2x">
+                  <img class="compare__image slider-cat__image slider-cat__image--state-before" src="img/mobile-images/images-slider/cat-weight.png" width="280" height="256" srcset="img/mobile-images/images-slider/cat-weight@2x.png 2x" alt="Толстый кот">
+                </picture>
+              </div>
+              <div class="slider-cat__curtain">
+                <button class="slider-cat__button-before-after" type="button">
+                  <svg class="slider-cat__arrows" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="#666"/></svg>
+                  <span class="page__hidden"></span>
+                </button>
+              </div>
+              <div class="slider-cat__after">
+                <picture>
+                  <source media="(min-width: 1440px)" width="560" height="512" srcset="img/desktop-images/images-slider/cat-slim.png 1x, img/desktop-images/images-slider/cat-weight@2x.png 2x">
+                  <source media="(min-width: 768px)" width="560" height="512" srcset="img/tablet-images/images-slider/cat-slim.png 1x, img/tablet-images/images-slider/cat-slim@2x.png 2x">
+                  <img class="compare__image slider-cat__image slider-cat__image--state-after" src="img/mobile-images/images-slider/cat-slim.png" width="280" height="256" srcset="img/mobile-images/images-slider/cat-weight@2x.png 2x" alt="Толстый кот">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
