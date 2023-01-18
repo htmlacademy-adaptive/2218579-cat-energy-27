@@ -9,7 +9,7 @@
       background-color: #68b738;
       z-index: -1;
       top: 0;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/desktop-images/cat.png");
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop-images/cat.png");
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -17,7 +17,7 @@
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/desktop-images/cat@2x.png");
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/desktop-images/cat@2x.png");
         background-size: cover;
       }
     }
