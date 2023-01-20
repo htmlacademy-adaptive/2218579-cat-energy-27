@@ -16,10 +16,22 @@
     background-color: #f2f2f2;
   }
 
+  @media (min-width: $tablet-width) {
+    gap: 296px;
+    padding: 56px 58px;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
     position: absolute;
+    // top: 95px;
+
+    width: 408px;
+    padding: 45px 77px 61px 78px;
+    position: absolute;
     top: 95px;
+    left: 110px;
+    gap: 90px;
 
     &--background {
       background-color: $white;
@@ -32,6 +44,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -43,6 +56,22 @@
   font-family: "Lato Regular", "Arial", sans-serif;
   font-style: normal;
   line-height: 20px;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.address__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 15px;
+  }
 }
 
 .address__location {

@@ -19,6 +19,17 @@
   @media (min-width: $tablet-width) {
     padding: 39px 37px;
     border: 1px solid #ebebeb;
+
+    &::before {
+      background-image: url("../img/tablet-images/plus.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      content: "";
+      top: 25px;
+      left: 46%;
+    }
   }
 
   @media (min-width: $desktop-width) {

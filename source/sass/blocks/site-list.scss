@@ -5,11 +5,24 @@
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
   position: relative;
-  padding: 17px 0 11px 33px;
+  // padding: 17px 0 11px 33px;
+  padding: 21px 0 23px;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 17px 0 11px 33px;
+    padding: 17px 8px 11px 31px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 3px 11px 31px;
   }
 }
 
@@ -26,7 +39,7 @@
       background-color: #68b738;
       width: calc(100% - 34px);
       z-index: 1;
-      bottom: 12px;
+      bottom: 0;
     }
   }
 
@@ -37,7 +50,7 @@
 
     &--current::before {
       background-color: #ffffff;
-      bottom: -12px;
+      bottom: 3px;
     }
 
     &--user {
