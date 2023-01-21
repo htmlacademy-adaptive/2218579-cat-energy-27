@@ -44,12 +44,12 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    padding: 0
+    padding: 0;
   }
 }
 
 .main-header__logo-title {
-  padding: 0px 0px 7px;
+  padding: 0 0 7px;
 
   &:hover {
     opacity: 0.8;
