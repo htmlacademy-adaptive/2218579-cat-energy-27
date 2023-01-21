@@ -23,9 +23,6 @@
 
   @media (min-width: $desktop-width) {
     background-color: $white;
-    position: absolute;
-    // top: 95px;
-
     width: 408px;
     padding: 45px 77px 61px 78px;
     position: absolute;
@@ -64,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    text-align: start;
   }
 }
 
