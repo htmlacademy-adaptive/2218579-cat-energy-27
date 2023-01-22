@@ -16,13 +16,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 22px 20px 19px;
   border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 22px 20px 8px;
+  gap: 6px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 29px;
+    padding: 29px 28px;
     row-gap: 13px;
     border: 1px solid #e7e7e7;
+    gap: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +34,11 @@
 }
 
 .program-selection__item {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .program-selection__label {
@@ -86,4 +93,10 @@
   font-size: 16px;
   text-transform: uppercase;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 58px;
+  }
 }

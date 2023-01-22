@@ -13,15 +13,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 17px 8px 11px 31px;
+    padding: 17px 3px 11px 36px;
 
     &:first-child {
       border: none;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 17px 3px 11px 31px;
   }
 }
 
@@ -48,7 +44,7 @@
     color: $white;
 
     &--current::before {
-      background-color: #ffffff;
+      background-color: $white;
       bottom: 3px;
     }
 
@@ -63,7 +59,7 @@
       background-color: #68b738;
       width: calc(100% - 34px);
       z-index: 1;
-      bottom: -10px;
+      bottom: 3px;
     }
   }
 }

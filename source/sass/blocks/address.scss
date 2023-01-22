@@ -53,15 +53,15 @@
   font-family: "Lato Regular", "Arial", sans-serif;
   font-style: normal;
   line-height: 20px;
-  text-align: end;
 
   @media (min-width: $tablet-width) {
     padding-right: 13px;
+    text-align: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
-    text-align: start;
+    text-align: left;
   }
 }
 
