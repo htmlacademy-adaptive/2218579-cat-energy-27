@@ -63,6 +63,10 @@
   border: 1px solid #cdcdcd;
   padding: 14px 15px;
 
+  &:focus-within {
+    outline: 1px solid #000000;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -77,10 +81,21 @@
   flex-grow: 1;
   border: none;
   padding: 0;
+  box-sizing: border-box;
 
   &--cat-data {
     border: 1px solid #e7e7e7;
     padding: 14px 20px;
+  }
+
+  &--email {
+    border: none;
+    outline: none;
+  }
+
+  &--mobile {
+    border: none;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -95,6 +110,8 @@
 }
 
 .form__icon {
+  padding-left: 5px;
+
   @media (min-width: $tablet-width) {
     padding-right: 13px;
   }
