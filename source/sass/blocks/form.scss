@@ -88,11 +88,7 @@
     padding: 14px 20px;
   }
 
-  &--email {
-    border: none;
-    outline: none;
-  }
-
+  &--email,
   &--mobile {
     border: none;
     outline: none;
@@ -142,7 +138,7 @@
     &::before {
       content: "";
       padding: 0 30px;
-      width: 112%;
+      width: 111%;
       left: -11%;
       bottom: 148%;
     }
