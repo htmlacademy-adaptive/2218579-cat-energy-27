@@ -1,5 +1,13 @@
 .footer-logo-cat-energy__title {
-  padding: 39px 5px 20px;
+  padding: 35px 5px 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;

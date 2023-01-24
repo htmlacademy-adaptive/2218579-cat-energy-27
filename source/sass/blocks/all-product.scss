@@ -17,12 +17,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 39px 37px;
-    border: 1px solid #ebebeb;
+    padding: 78px 0 0;
+    border: none;
+
+    &::before {
+      background-image: url("../img/tablet-images/plus.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      content: "";
+      top: 127px;
+      left: 131px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 72px 0 0;
+
+    &::before {
+      top: 132px;
+      left: 92px;
+    }
+  }
+}
+
+.all-product__container {
+  @media (min-width: $tablet-width) {
+    border: 1px solid #ebebeb;
+    min-height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
@@ -38,11 +64,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    padding: 122px 57px 23px 58px;
+    padding: 160px 74px 23px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 160px 55px 23px 56px;
+  @media (min-width: $desktop-width) {
+    padding: 166px 52px 23px 56px;
   }
 }
 
@@ -50,10 +76,17 @@
   font-family: "Lato Regular", "Arial", sans-serif;
   margin: 0;
   padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     line-height: 18px;
-    padding: 0 42px 87px;
+    font-size: 16px;
+    padding: 0 50px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 58px;
   }
 }
 
@@ -69,12 +102,16 @@
   text-transform: uppercase;
   padding: 10px 94px;
 
-  @media (min-width: $tablet-width) {
-    padding: 10px 79px;
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 
   @media (min-width: $tablet-width) {
     padding: 13px 30px;
-    margin: 38px 41px;
+    margin: 29px 36px;
   }
 }

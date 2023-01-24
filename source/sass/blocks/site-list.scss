@@ -5,16 +5,32 @@
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
   position: relative;
-  padding: 17px 0 11px 33px;
+  padding: 21px 0 23px;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 17px 0 11px 33px;
+    padding: 17px 3px 11px 36px;
+
+    &:first-child {
+      border: none;
+    }
   }
 }
 
 .site-list__name-link {
   @include link;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -26,7 +42,7 @@
       background-color: #68b738;
       width: calc(100% - 34px);
       z-index: 1;
-      bottom: 12px;
+      bottom: 0;
     }
   }
 
@@ -36,8 +52,8 @@
     color: $white;
 
     &--current::before {
-      background-color: #ffffff;
-      bottom: -12px;
+      background-color: $white;
+      bottom: 3px;
     }
 
     &--user {
@@ -51,7 +67,7 @@
       background-color: #68b738;
       width: calc(100% - 34px);
       z-index: 1;
-      bottom: -10px;
+      bottom: 3px;
     }
   }
 }

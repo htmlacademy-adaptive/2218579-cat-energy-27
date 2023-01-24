@@ -8,22 +8,21 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 141px 60px;
-    padding-bottom: 68px;
+    gap: 58px 60px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 143px 80px;
     padding-bottom: 75px;
+    gap: 64px 80px;
   }
 }
 
 .catalog-product__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 23px;
   border-top: 1px solid #d9d9d9;
   position: relative;
 
@@ -33,15 +32,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     border: none;
-    gap: 0;
-    // justify-content: end;
 
     &::before {
       content: "";
       width: 100%;
       height: 430px;
       background-color: #f2f2f2;
-      top: 31px;
+      top: 76px;
       position: absolute;
       z-index: -1;
     }
@@ -67,7 +64,7 @@
 }
 
 .catalog-product__image {
-  padding-top: 19px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -100,13 +97,21 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    padding: 46px 45px 22px 55px;
+    padding: 35px 45px 22px 55px;
   }
 }
 
 .catalog-product__background {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.catalog-product__weight {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -123,6 +128,14 @@
   padding: 10px 109px;
   text-transform: uppercase;
   margin: 0 20px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin: 33px 37px 39px;

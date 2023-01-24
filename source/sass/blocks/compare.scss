@@ -1,0 +1,11 @@
+.compare {
+  margin: 0 auto;
+  --curtain-place: 0.5;
+}
+
+.compare__image {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}

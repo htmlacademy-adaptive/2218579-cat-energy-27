@@ -25,7 +25,8 @@
 
 
 .main-header__logo-image {
-  padding-right: 57px;
+  padding-right: 52px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -36,7 +37,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 13px;
+    padding: 0 0 0 10px;
     width: 174px;
     height: 52px;
   }
@@ -44,10 +45,13 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+    padding: 0;
   }
 }
 
 .main-header__logo-title {
+  padding: 0 0 7px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -64,10 +68,14 @@
 
 .main-header__wrapper-logo {
   padding: 12px 65px 17px 20px;
-  border-bottom: 1px solid #e6e6e6;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 200px;
   }
 }

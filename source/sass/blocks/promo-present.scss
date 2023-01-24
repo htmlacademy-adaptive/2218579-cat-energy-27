@@ -7,7 +7,7 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
   align-items: center;
   height: 290px;
@@ -21,11 +21,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin: 69px 0 76px;
+    margin: 69px 0 71px;
     justify-content: space-between;
-    gap: 265px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/tablet-images/carrying-case.png");
     height: 202px;
+    padding: 0 78px;
+    gap: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/tablet-images/carrying-case@2x.png");
@@ -62,6 +63,7 @@
 .promo-present__description {
   font-family: "Lato Regular", "Arial", sans-serif;
   line-height: 20px;
+  font-size: 16px;
   margin: 0;
   padding: 48px 61px 43px 58px;
   color: $white;
@@ -69,7 +71,7 @@
   @media (min-width: $tablet-width) {
     width: 30%;
     text-align: start;
-    padding: 71px 124px 69px 0;
+    padding: 71px 42px 69px 174px;
   }
 
   @media (min-width: $desktop-width) {
