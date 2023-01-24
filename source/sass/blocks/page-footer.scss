@@ -30,14 +30,26 @@
   align-items: center;
   margin-top: 20px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     margin: 0;
   }
 }
 
+.page-footer__logo:hover .page-footer__logo-image {
+  color: #68b738;
+}
+
 .page-footer__logo-title {
   @media (min-width: $tablet-width) {
     padding-right: 27px;
   }
+}
+
+.page-footer__logo-image {
+  color: #666666;
 }

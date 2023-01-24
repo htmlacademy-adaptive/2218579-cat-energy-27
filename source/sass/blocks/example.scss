@@ -79,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 0 69px;
+    padding: 70px 68px 69px 0;
   }
 }
 
@@ -175,7 +175,7 @@
     padding: 9px 0 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 66px 0;
   }
 }

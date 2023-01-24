@@ -7,7 +7,7 @@
     content: "";
     position: absolute;
     background-color: #68b738;
-    width: 100%;
+    width: 97%;
     height: 2px;
     top: 4%;
     z-index: -1;
@@ -194,6 +194,14 @@
   background-color: #68b738;
   padding: 10px 109px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;

@@ -87,6 +87,14 @@
   @include visually-hidden;
 }
 
+.supplement__input:focus-within + .supplement__control-mark {
+  outline: 1px solid #000000;
+}
+
+.supplement__input:hover + .supplement__control-mark {
+  outline: 1px solid #bababa;
+}
+
 .supplement__control-mark {
   position: absolute;
   width: 30px;
