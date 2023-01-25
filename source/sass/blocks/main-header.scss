@@ -25,7 +25,7 @@
 
 
 .main-header__logo-image {
-  padding-right: 52px;
+  padding-right: 58px;
   cursor: pointer;
 
   &:hover {
@@ -67,8 +67,9 @@
 }
 
 .main-header__wrapper-logo {
-  padding: 12px 65px 17px 20px;
+  padding: 12px 65px 14px 20px;
   display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;

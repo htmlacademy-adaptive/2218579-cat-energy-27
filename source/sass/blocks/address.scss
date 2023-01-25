@@ -6,7 +6,7 @@
 
 .address__wrapper {
   display: grid;
-  padding: 26px 20px;
+  padding: 26px 7px;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   background-color: #ffffff;
@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 296px;
-    padding: 56px 58px;
+    padding: 60px 58px;
   }
 
   @media (min-width: $desktop-width) {

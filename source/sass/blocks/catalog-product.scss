@@ -8,15 +8,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 58px 60px;
-    padding-bottom: 59px;
+    gap: 69px 60px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 75px;
-    gap: 64px 80px;
+    gap: 71px 80px;
   }
 }
 
@@ -64,7 +64,7 @@
 }
 
 .catalog-product__image {
-  padding-top: 27px;
+  padding: 17px 0 11px 20px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -92,7 +92,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding: 34px 73px 21px 78px;
+    padding: 31px 73px 17px 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,6 +123,7 @@
   @include link;
 
   line-height: 20px;
+  font-size: 16px;
   color: $white;
   background-color: #68b738;
   padding: 10px 109px;
@@ -138,7 +139,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 33px 37px 39px;
+    margin: 31px 37px 36px;
     padding: 10px 93px;
   }
 
