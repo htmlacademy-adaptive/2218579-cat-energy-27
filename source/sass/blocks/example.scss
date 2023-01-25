@@ -46,7 +46,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 38px 30px 64px;
+    padding: 42px 30px 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +65,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 0 7px;
+    padding: 15px 0 5px;
   }
 }
 
@@ -139,6 +139,7 @@
     line-height: 14px;
     width: 142px;
     padding: 0;
+    text-transform: lowercase;
   }
 }
 
@@ -170,6 +171,8 @@
 }
 
 .example__current-cost {
+  padding: 0 0 0 4px;
+
   @media (min-width: $tablet-width) {
     display: block;
     padding: 9px 0 0;
