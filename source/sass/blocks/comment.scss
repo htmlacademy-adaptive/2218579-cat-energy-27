@@ -38,7 +38,7 @@
   font-size: 24px;
   line-height: 26px;
   margin-left: -20px;
-  background-color: $white;
+  background-color: #ffffff;
   padding: 0 20px 36px;
 
   @media (min-width: $tablet-width) {
@@ -63,6 +63,7 @@
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;

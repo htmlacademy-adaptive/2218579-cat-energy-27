@@ -53,10 +53,10 @@
   @media (min-width: $desktop-width) {
     line-height: 30px;
     font-size: 20px;
-    color: $white;
+    color: #ffffff;
 
     &--current::before {
-      background-color: $white;
+      background-color: #ffffff;
       bottom: 3px;
     }
 
