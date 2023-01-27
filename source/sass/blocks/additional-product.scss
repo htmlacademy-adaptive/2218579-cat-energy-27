@@ -13,7 +13,6 @@
     z-index: -1;
   }
 
-
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
@@ -40,7 +39,7 @@
   padding: 0 20px 36px;
   position: relative;
   display: inline-block;
-  background-color: $white;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     padding: 0 37px 80px;
@@ -192,7 +191,7 @@
 
   @include link;
 
-  color: $white;
+  color: #ffffff;
   background-color: #68b738;
   padding: 10px 109px;
   text-transform: uppercase;

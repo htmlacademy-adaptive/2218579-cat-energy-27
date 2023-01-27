@@ -19,14 +19,14 @@
   height: 2px;
   right: 0;
   top: 0;
-  background-color: $black;
-  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 @media (max-width: $mobile-width) {
   .main-navigation--opened .main-navigation__wrapper {
     position: absolute;
-    background-color: $white;
+    background-color: #ffffff;
     width: 100%;
   }
 
@@ -40,6 +40,10 @@
 
   .main-navigation--nojs .main-navigation__toggle {
     display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__list {
+    display: block;
   }
 }
 
@@ -58,7 +62,7 @@
     position: absolute;
     width: 26px;
     height: 2px;
-    background-color: $black;
+    background-color: #000000;
     left: 1px;
   }
 
