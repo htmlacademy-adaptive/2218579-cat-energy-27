@@ -107,10 +107,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 0 15px;
+    grid-template-columns: 1fr 1fr 244px;
+    padding: 14px 0 13px;
   }
 }
 
@@ -133,6 +131,8 @@
 
   @media (min-width: $desktop-width) {
     width: 161px;
+    grid-row-start: 3;
+    padding-top: 8px;
   }
 }
 
@@ -155,7 +155,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 139px;
+    align-items: center;
+    grid-row-start: 3;
   }
 }
 
@@ -165,20 +166,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 131px;
-    padding-right: 27px;
+    min-width: 131px;
   }
 }
 
 .additional-product__price {
   @media (min-width: $tablet-width) {
     margin-left: 35px;
-    width: 42px;
+    min-width: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 86px;
-    padding-right: 16px;
+    margin-left: 96px;
+    padding-right: 42px;
   }
 }
 
@@ -210,6 +210,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 11px 92px;
+    padding: 12px 92px;
+    grid-column-start: 3;
   }
 }
